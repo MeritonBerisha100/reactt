@@ -1,9 +1,9 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/navbar.css";
 import React from "react";
+import "../styles/Header.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
-function navbar() {
+const Header = () => {
   return (
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container">
@@ -25,7 +25,7 @@ function navbar() {
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="#" aria-current="page">
-                Investment Opportunities
+                Investment opportunities
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
@@ -45,29 +45,26 @@ function navbar() {
               >
                 About us
               </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="#">
-                  Action 1
-                </a>
-                <a class="dropdown-item" href="#">
-                  Action 2
-                </a>
-              </div>
             </li>
           </ul>
-
-         
+          <form className="auth-form d-flex my-2 my-lg-0">
+            <button
+              className="btn btn-outline-success my-2 my-sm-0 login-btn"
+              type="button"
+            >
+              Login
+            </button>
+            <button
+              className="btn btn-outline-danger my-2 my-sm-0 register-btn"
+              type="button"
+            >
+              Register
+            </button>
+          </form>
         </div>
       </div>
     </nav>
-
-
-
-
-  
-
-
-
   );
-}
-export default navbar;
+};
+
+export default Header;

@@ -1,0 +1,89 @@
+/* Shtoni këtë stil për të vendosur footer-in në fund të faqes */
+.footer-container {
+ 
+color: #333;
+  width: 100%;
+  background-color: #f8f9fa;  /* Ngjyra e sfondit të footer-it */
+  padding: 20px 0;  /* Hapësira në pjesën e brendshme të footer-it */
+}
+
+
+.footer-container h1{
+
+
+text-decoration: none;
+color:#333;
+
+}
+
+.footer-container li{
+
+
+color: #333;
+
+}
+
+.footer-title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #333; /* Ngjyra e linkeve */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #0056b3; /* Ngjyra kur linku është në hover */
+}
+
+.footer-icon {
+  color: #6c757d;  /* Ngjyra e ikonave */
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+  color: #495057;  /* Ngjyra kur ikona është në hover */
+}
+
+
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .footer-container h1 {
+    font-size: 20px;
+  }
+
+  .footer-container .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-container .container {
+    padding: 0;
+  }
+
+  .footer-container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container .col-md-3 {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .footer-icon {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  .footer-container .row .col-md-6 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

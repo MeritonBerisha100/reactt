@@ -1,0 +1,115 @@
+/* General reset for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3E50; /* Change to your preferred color */
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    list-style-type: none;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #1abc9c; /* Color change on hover */
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #16a085; /* Darker shade on hover */
+  }
+  
+  /* Optional: Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+  
+
+ /* Shtoni këtu stilin për formularin */
+.auth-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-form .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 1px;
+}
+
+/* Butoni Login - Background i gjelbër */
+.auth-form .login-btn {
+  background-color: #1abc9c;  /* Gjelbër */
+  color: white;  /* Teksti i bardhë */
+  border: none;  /* Hiq kufirin default */
+}
+
+.auth-form .login-btn:hover {
+  background-color: #218838;  /* Ngjyra më e errët e gjelbër kur merret në hover */
+}
+
+/* Butoni Register - Background i kuq */
+.auth-form .register-btn {
+  background-color: #dc3545;  /* I kuq */
+  color: white;  /* Teksti i bardhë */
+  border: none;  /* Hiq kufirin default */
+}
+
+.auth-form .register-btn:hover {
+  background-color: #c82333;  /* Ngjyra më e errët e kuqe kur merret në hover */
+}
+
+.auth-form .btn:active {
+  transform: scale(0.98);  /* Efekti kur shtyp butonin */
+}
+

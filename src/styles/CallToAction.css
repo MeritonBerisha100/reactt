@@ -1,0 +1,120 @@
+/* Përgjigjshmëria e CallToAction */
+.call-to-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+background-color: white;
+}
+
+/* Content që mban tekstin dhe butonin */
+.content {
+  width: 40%; /* Largimi nga e majta dhe e djathta për të ruajtur ekuilibrin */
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.content p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  color: #555;
+}
+
+.apply-button {
+  padding: 12px 25px;
+  background-color: #00796b;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #004d40;
+}
+
+/* Imazhi Cuate dhe Maskë */
+.cuate-image {
+
+  object-fit: cover;
+}
+
+.maska-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+/* Media Query për ekranet më të vogla (tablet) */
+@media (max-width: 768px) {
+  .call-to-action {
+    flex-direction: column; /* Do të vendosim përmbajtjen dhe imazhin në një kolonë */
+    padding: 30px;
+    text-align: center;
+  }
+
+  .content {
+    width: 100%; /* Sigurojmë që përmbajtja të shfrytëzojë të gjithë hapësirën */
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .apply-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .cuate-image {
+    width: 80%; /* Sigurojmë që imazhi Cuate të jetë më i vogël për pajisje më të vogla */
+    margin-top: 20px;
+  }
+
+  .maska-image {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+  }
+}
+
+/* Media Query për pajisje shumë të vogla (smartphone) */
+@media (max-width: 480px) {
+  .call-to-action {
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  .apply-button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+
+  .cuate-image {
+    width: 90%; /* Imazhi Cuate do të jetë më i vogël në ekranet e vogla */
+    margin-top: 20px;
+  }
+
+  .maska-image {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+  }
+}
