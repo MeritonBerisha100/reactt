@@ -1,0 +1,38 @@
+.navbar-brand{
+
+
+
+color: green;
+font-weight: bold;
+
+
+}
+
+.container{
+
+
+
+color: grey;
+font-weight: bold;
+
+
+
+
+}
+
+.images{
+
+
+    border-radius: 100%;
+    position: absolute;
+    top: 20%;
+   right: 60%;
+   color: #336ee1;
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+   -moz-opacity: 0.5;
+   -khtml-opacity: 0.5;
+   -webkit-opacity: 0.5;
+
+}
+

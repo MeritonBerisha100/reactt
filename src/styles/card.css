@@ -1,0 +1,11 @@
+.cards {
+    text-align: center !important;
+    position: absolute;
+    bottom: 0;
+    /* Ndryshoni në 0 për të vendosur në fund të kontejnerit */
+    left: 50%;
+    /* Qendron horizontalisht */
+
+    transform: translate(-60% ,80%);
+    /* Përshtat pozitën për të qendruar në qendër */
+}
