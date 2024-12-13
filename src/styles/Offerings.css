@@ -1,0 +1,54 @@
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card.active {
+  background-color: #e0f7fa; /* Drita e kaltër kur është aktiv */
+  border-color: #00796b;
+  transform: translateY(-5px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-body .btn {
+  background-color: #F56B8D;
+  text-align: center;
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.card-body .btn:hover {
+  background-color: #00796b;
+  transition: 1s;
+  
+}
